@@ -12,6 +12,15 @@ h1, h2, h3 {
     display: block;
     clear: both;
 }
+h1 {
+    font-size: 1em;
+}
+h2 {
+    font-size: 1em;
+}
+h3 {
+    font-size: 1em;
+}
 .helpbox {
     background-color: #FBECCE;
     display: block;
@@ -45,4 +54,6 @@ h1, h2, h3 {
     width: 200px;
     padding: 1px 3px;
 }
-
+.abstract {
+    font-size: 10px;
+}
