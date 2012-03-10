@@ -1,274 +1,302 @@
 <!doctype html>
-<html>
+<html lang="de">
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8">
         <title>VIM - VIMWIZ</title>
-        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Ein VIM Spickzettel auf Deutsch">
+        <meta name="author" content="Norbert Vieten">
+
+        <!-- Le styles -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('h2').click(function(){
+                    $(this).nextUntil('h2').toggle();
+                });
+            });
+        </script>
     </head>
     <body>
-        <h1>VIWIZ VI, VIM Spickzettel</h1>
-        <h2>Browse</h2>
-        <div class="helpbox">
-            <div class="usraction">CRTL-]</div>
-            <div class="vimaction">Springe zum Link oder suche nach dem Wort in der Hilfe</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">
-                CRTL-o<br />
-                CRTL-t
+        <div class="container-fluid">
+            <img src="images/vimlogo.gif" />
+            <h1>VIWIZ VI, VIM Spickzettel</h1>
+            <h2>Browse</h2>
+            <div class="row-fluid">
+                <div class="span3">CRTL-]</div>
+                <div class="span3">Springe zum Link oder suche nach dem Wort in der Hilfe</div>
             </div>
-            <div class="vimaction">Sprung zurück</div>
-        </div>
-        <h2>Hilfen</h2>
-        <div class="abstract">
-            <p>Um Hilfe zu den Kommandos bzw. insert und visual Mode zu
-            erhalten müssen die Befehle genauso eingegeben werden wie in
-            den Beispielen angegeben.</p>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">
-                :help word CRTL-d<br />
-                :helpgrep word
+            <div class="row-fluid">
+                <div class="span3">
+                    CRTL-o<br />
+                    CRTL-t
+                </div>
+                <div class="span3">Sprung zurück</div>
             </div>
-            <div class="vimaction">Zeigt alle Vorkommen von 'word' in der Hilfe</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">:xxxx CRTL-d<br /></div>
-            <div class="vimaction">Zeigt alle möglichen Optionen zu dem Befehl :xxxx.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">
-                :help irgendwas<br />
-                Normal mode
+            <h2>Hilfen</h2>
+            <div class="abstract">
+                <p>Um Hilfe zu den Kommandos bzw. insert und visual Mode zu
+                erhalten müssen die Befehle genauso eingegeben werden wie in
+                den Beispielen angegeben.</p>
             </div>
-            <div class="vimaction">Suche hilfe für irgendwas</div>
-            <div class="example">:help x</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">
-                :help v_<br />
-                Visual mode
+            <div class="">
+                <div class="row-fluid">
+                    :help word CRTL-d<br />
+                    :helpgrep word
+                </div>
+                <div class="span3">Zeigt alle Vorkommen von 'word' in der Hilfe</div>
             </div>
-            <div class="vimaction">Suche Hilfe für Befehle im visual Mode</div>
-            <div class="example">:help v_u</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">
-                :help i_<br />
-                Insert mode
+            <div class="row-fluid">
+                <div class="span3">:xxxx CRTL-d<br /></div>
+                <div class="span3">Zeigt alle möglichen Optionen zu dem Befehl :xxxx.</div>
             </div>
-            <div class="vimaction">Suche Hilfe für Befehle im insert Mode</div>
-            <div class="example">:help i_&lt;Esc&gt;</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">
-                :help :<br />
-                Kommandozeilen Kommando
+            <div class="row-fluid">
+                <div class="span3">
+                    :help irgendwas<br />
+                    Normal mode
+                </div>
+                <div class="span3">Suche hilfe für irgendwas</div>
+                <div class="example">:help x</div>
             </div>
-            <div class="vimaction">Hilfe für Kommandozeilen Kommandos</div>
-            <div class="example">:help :quit</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">:help c_</div>
-            <div class="vimaction">Kommandozeilen Bearbeitung</div>
-            <div class="example">:help c_&lt;Del&gt;</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">:help -</div>
-            <div class="vimaction">VIM Kommando Argument</div>
-            <div class="example">:help -r</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">:help 'option'</div>
-            <div class="vimaction">Hilfe zu VIM-Option</div>
-            <div class="example">:help 'textwidth'</div>
-        </div>
-        <h2>Bewegen</h2>
-        <div class="abstract">
-            <p>Bewegungen werden im normal modus durchgeführt. In den
-            normal Modus gelangt man durch drücken von &lt;Esc&gt;. Um ganz
-            sicher in den normal Modus zu gelangen drückt man einfach 2x
-            &lt;Esc&gt;</p>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">h</div>
-            <div class="vimaction">nach links</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">j</div>
-            <div class="vimaction">nach unten</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">k</div>
-            <div class="vimaction">nach oben</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">l</div>
-            <div class="vimaction">nach rechts</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">f&lt;</div>
-            <div>(find forward)</div>
-            <div class="vimaction">vorwärts bis Zeichen &lt;</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">t&lt;</div>
-            <div>(go <u>t</u>o)</div>
-            <div class="vimaction">vorwärts bis vor Zeichen &lt;</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">F&lt;</div>
-            <div>(find backwards)</div>
-            <div class="vimaction">rückwärts bis Zeichen &lt;</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">T&lt;</div>
-            <div>(back <u>t</u>o)</div>
-            <div class="vimaction">rückwärts bis Zeichen &lt;</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">zt</div>
-            <div class="vimaction">Positionerung der aktuellen Zeile an den oberen Bildschirmrand</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">zz</div>
-            <div class="vimaction">Positionierung der aktuellen Zeile in die Mitte</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">zb</div>
-            <div class="vimaction">Positionierung der aktellen Zeile nach unten.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">&lt;ctrl&gt; f</div>
-            <div class="vimaction">Eine Bildschirmseite vorwärts.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">&lt;ctrl&gt; b</div>
-            <div class="vimaction">Eine Bildschirmseite rückwärts.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">&lt;ctrl&gt; d</div>
-            <div class="vimaction">Eine halbe Bildschirmseite vorwärts.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">&lt;ctrl&gt; u</div>
-            <div class="vimaction">Eine halbe Bildschirmseite rückwärts.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">&lt;shift&gt; H</div>
-            <div class="vimaction">Cursor springt an den oberen Bildschirmrand</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">&lt;shift&gt; M</div>
-            <div class="vimaction">Cursor sprint in die Mitte des Bildschirms</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">&lt;shift&gt; L</div>
-            <div class="vimaction">Cursor springt in die unterste Bildschirmzeile</div>
-        </div>
-        <h2>Einfügen</h2>
-        <div class="abstract">
-            <p>Die folgenden Eingaben wechseln in den Einfüge-Modus.</p>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">i</div>
-            <div class="vimaction">Einfügen links vom Cursor.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">I</div>
-            <div class="vimaction">Einfügen am Zeilenanfang.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">a</div>
-            <div class="vimaction">Einfügen rechts vom Cursor.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">A</div>
-            <div class="vimaction">Einfügen am Zeilenende.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">o</div>
-            <div class="vimaction">Neue Zeile hinter der aktuellen einfügen.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">O</div>
-            <div class="vimaction">Neue Zeile vor der aktuellen einfügen.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">R</div>
-            <div class="vimaction">Überschreiben ab Cursorposition.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">r</div>
-            <div class="vimaction">Ersetze das Zeichen unter dem Cursor und gehe zurück in den Kommando-Modus.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">s</div>
-            <div class="vimaction">Ersetze das Zeichen unter dem Cursor und bleibe im Einfüge-Modus.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">
-                S<br />
-                cc
+            <div class="row-fluid">
+                <div class="span3">
+                    :help v_<br />
+                    Visual mode
+                </div>
+                <div class="span3">Suche Hilfe für Befehle im visual Mode</div>
+                <div class="example">:help v_u</div>
             </div>
-            <div class="vimaction">Ersetze die Zeile.</div>
+            <div class="row-fluid">
+                <div class="span3">
+                    :help i_<br />
+                    Insert mode
+                </div>
+                <div class="span3">Suche Hilfe für Befehle im insert Mode</div>
+                <div class="example">:help i_&lt;Esc&gt;</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">
+                    :help :<br />
+                    Kommandozeilen Kommando
+                </div>
+                <div class="span3">Hilfe für Kommandozeilen Kommandos</div>
+                <div class="example">:help :quit</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">:help c_</div>
+                <div class="span3">Kommandozeilen Bearbeitung</div>
+                <div class="example">:help c_&lt;Del&gt;</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">:help -</div>
+                <div class="span3">VIM Kommando Argument</div>
+                <div class="example">:help -r</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">:help 'option'</div>
+                <div class="span3">Hilfe zu VIM-Option</div>
+                <div class="example">:help 'textwidth'</div>
+            </div>
+            <h2>Bewegen</h2>
+            <div class="abstract">
+                <p>Bewegungen werden im normal modus durchgeführt. In den
+                normal Modus gelangt man durch drücken von &lt;Esc&gt;. Um ganz
+                sicher in den normal Modus zu gelangen drückt man einfach 2x
+                &lt;Esc&gt;</p>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">h</div>
+                <div class="span3">nach links</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">j</div>
+                <div class="span3">nach unten</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">k</div>
+                <div class="span3">nach oben</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">l</div>
+                <div class="span3">nach rechts</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">f&lt;</div>
+                <div>(find forward)</div>
+                <div class="span3">vorwärts bis Zeichen &lt;</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">t&lt;</div>
+                <div>(go <u>t</u>o)</div>
+                <div class="span3">vorwärts bis vor Zeichen &lt;</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">F&lt;</div>
+                <div>(find backwards)</div>
+                <div class="span3">rückwärts bis Zeichen &lt;</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">T&lt;</div>
+                <div>(back <u>t</u>o)</div>
+                <div class="span3">rückwärts bis Zeichen &lt;</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">zt</div>
+                <div class="span3">Positionerung der aktuellen Zeile an den oberen Bildschirmrand</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">zz</div>
+                <div class="span3">Positionierung der aktuellen Zeile in die Mitte</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">zb</div>
+                <div class="span3">Positionierung der aktellen Zeile nach unten.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">&lt;ctrl&gt; f</div>
+                <div class="span3">Eine Bildschirmseite vorwärts.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">&lt;ctrl&gt; b</div>
+                <div class="span3">Eine Bildschirmseite rückwärts.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">&lt;ctrl&gt; d</div>
+                <div class="span3">Eine halbe Bildschirmseite vorwärts.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">&lt;ctrl&gt; u</div>
+                <div class="span3">Eine halbe Bildschirmseite rückwärts.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">&lt;shift&gt; H</div>
+                <div class="span3">Cursor springt an den oberen Bildschirmrand</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">&lt;shift&gt; M</div>
+                <div class="span3">Cursor sprint in die Mitte des Bildschirms</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">&lt;shift&gt; L</div>
+                <div class="span3">Cursor springt in die unterste Bildschirmzeile</div>
+            </div>
+            <h2>Einfügen</h2>
+            <div class="abstract">
+                <p>Die folgenden Eingaben wechseln in den Einfüge-Modus.</p>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">i</div>
+                <div class="span3">Einfügen links vom Cursor.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">I</div>
+                <div class="span3">Einfügen am Zeilenanfang.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">a</div>
+                <div class="span3">Einfügen rechts vom Cursor.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">A</div>
+                <div class="span3">Einfügen am Zeilenende.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">o</div>
+                <div class="span3">Neue Zeile hinter der aktuellen einfügen.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">O</div>
+                <div class="span3">Neue Zeile vor der aktuellen einfügen.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">R</div>
+                <div class="span3">Überschreiben ab Cursorposition.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">r</div>
+                <div class="span3">Ersetze das Zeichen unter dem Cursor und gehe zurück in den Kommando-Modus.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">s</div>
+                <div class="span3">Ersetze das Zeichen unter dem Cursor und bleibe im Einfüge-Modus.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">
+                    S<br />
+                    cc
+                </div>
+                <div class="span3">Ersetze die Zeile.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">cw</div>
+                <div class="span3">Ersetze Wort.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">C</div>
+                <div class="span3">Ersetze bis zum Zeilenende</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">~</div>
+                <div class="span3">Wechsel Groß- Kleinschreibung.</div>
+            </div>
+            <h2>Folding</h2>
+            <div class="abstract">
+                <p>Bestimmte Bereiche zusammen falten.
+                Funktioniert im Kommado- als auch im Visual-Mode.</p>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">zfa}</div>
+                <div class="span3">Steht der Cursor in einem Block mit geschweiften Klammern wird der Block gefaltet.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">zf</div>
+                <div class="span3">Faltet den markierten Bereich.</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3"></div>
+                <div class="span3"></div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3"></div>
+                <div class="span3"></div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3"></div>
+                <div class="span3"></div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3"></div>
+                <div class="span3"></div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3"></div>
+                <div class="span3"></div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3"></div>
+                <div class="span3"></div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3"></div>
+                <div class="span3"></div>
+            </div>
+            <h2>Weitere Hilfen auf deutsch</h2>
+            <p>
+            <a href="http://www-user.tu-chemnitz.de/~hot/VIM/Tips_und_Tricks.html">http://www-user.tu-chemnitz.de/~hot/VIM/Tips_und_Tricks.html</a>
+            </p>
         </div>
-        <div class="helpbox">
-            <div class="usraction">cw</div>
-            <div class="vimaction">Ersetze Wort.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">C</div>
-            <div class="vimaction">Ersetze bis zum Zeilenende</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">~</div>
-            <div class="vimaction">Wechsel Groß- Kleinschreibung.</div>
-        </div>
-        <h2>Folding</h2>
-        <div class="abstract">
-            <p>Bestimmte Bereiche zusammen falten.
-            Funktioniert im Kommado- als auch im Visual-Mode.</p>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">zfa}</div>
-            <div class="vimaction">Steht der Cursor in einem Block mit geschweiften Klammern wird der Block gefaltet.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction">zf</div>
-            <div class="vimaction">Faltet den markierten Bereich.</div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction"></div>
-            <div class="vimaction"></div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction"></div>
-            <div class="vimaction"></div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction"></div>
-            <div class="vimaction"></div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction"></div>
-            <div class="vimaction"></div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction"></div>
-            <div class="vimaction"></div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction"></div>
-            <div class="vimaction"></div>
-        </div>
-        <div class="helpbox">
-            <div class="usraction"></div>
-            <div class="vimaction"></div>
-        </div>
-        <h2>Weitere Hilfen auf deutsch</h2>
-        <p>
-        <a href="http://www-user.tu-chemnitz.de/~hot/VIM/Tips_und_Tricks.html">http://www-user.tu-chemnitz.de/~hot/VIM/Tips_und_Tricks.html</a>
-        </p>
     </body>
 </html>
