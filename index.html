@@ -137,6 +137,38 @@
                 <div class="span3">nach rechts</div>
             </div>
             <div class="row-fluid">
+                <div class="span3">gg</div>
+                <div class="span3">zum Anfang der Datei springen</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">G</div>
+                <div class="span3">zum Ende der Datei springen</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">3G</div>
+                <div class="span3">in die dritte Zeile springen</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">w</div>
+                <div class="span3">ein Wort vorwärts</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">b</div>
+                <div class="span3">ein Wort rückwärts</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">$</div>
+                <div class="span3">zum Zeilenende</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">0</div>
+                <div class="span3">zum Zeilenanfang</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">^</div>
+                <div class="span3">zum ersten Zeichen der Zeile</div>
+            </div>
+            <div class="row-fluid">
                 <div class="span3">f&lt;</div>
                 <div>(find forward)</div>
                 <div class="span3">vorwärts bis Zeichen &lt;</div>
@@ -169,6 +201,10 @@
                 <div class="span3">Positionierung der aktellen Zeile nach unten.</div>
             </div>
             <div class="row-fluid">
+                <div class="span3">&lt;ctrl&gt; e</div>
+                <div class="span3">Ganze Bildschirmseite nach oben scrollen.</div>
+            </div>
+            <div class="row-fluid">
                 <div class="span3">&lt;ctrl&gt; f</div>
                 <div class="span3">Eine Bildschirmseite vorwärts.</div>
             </div>
@@ -197,7 +233,7 @@
                 <div class="span3">Cursor springt in die unterste Bildschirmzeile</div>
             </div>
             <!--Einfügen-->
-            <h2>Einfügen</h2>
+            <h2>Bearbeiten</h2>
             <div class="abstract">
                 <p>Die folgenden Eingaben wechseln in den Einfüge-Modus.</p>
             </div>
@@ -249,8 +285,15 @@
                 <div class="span3">Ersetze Wort.</div>
             </div>
             <div class="row-fluid">
-                <div class="span3">C</div>
+                <div class="span3">
+                    C<br />
+                    c$
+                </div>
                 <div class="span3">Ersetze bis zum Zeilenende</div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">J</div>
+                <div class="span3">Aktuelle mit der darunterliegenden Zeile zusammenfügen.</div>
             </div>
             <div class="row-fluid">
                 <div class="span3">~</div>
@@ -271,10 +314,27 @@
                 <div class="span3">Faltet den markierten Bereich.</div>
             </div>
             <!-- Verschiedenes //-->
+            <h2>Keyboard Macros</h2>
+            <div class="abstract">
+                Start der Aufzeichnung mit 'q<i>Buchstabe</i>'.<br />
+                Beenden der Aufzeichnung mit 'q'.<br />
+                Aufrufen der Aufzeichnung mit '@q<i>Buchstabe</i><br />
+                Der Buchstabe bezeichnet das Register a-z.
+            </div>
             <h2>Verschiedenes</h2>
+            <div class="abstract">
+                Digraphs<br />
+                :digraphs zeigt alle Digraph-Sonderzeichen an.<br />
+                &lt;ctrl&gt;kCR - fügt einen Zeilenumbruch (^M) ein.<br />
+                Achtung: die Eingaben sind Case-Sensitiv.
+            </div>
             <div class="helpbox">
                 <div class="usraction">:cd %:h</div>
                 <div class="vimaction">Wechselt in das Verzeichnis der aktuell geöffneten Datei.</div>
+            </div>
+            <div class="helpbox">
+                <div class="usraction">&lt;ctrl&gt; g</div>
+                <div class="vimaction">Zeigt die aktuelle Position in der Datei.</div>
             </div>
             <h2>Weitere Hilfen auf deutsch</h2>
             <p>
