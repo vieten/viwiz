@@ -1,11 +1,12 @@
 .key {
     border: 1px solid black;
-    width: 20px;
-    height: 20px;
+    width: 26px;
+    height: 26px;
     display: inline-block;
-    line-height: 20px;
+    line-height: 26px;
     text-align: center;
-    text-transform: uppercase;
+    margin: 1px;
+    /*text-transform: uppercase;*/
     border-radius: 7px;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
