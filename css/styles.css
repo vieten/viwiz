@@ -16,4 +16,11 @@ h1 {
     font-size: 3em;
     color: #dfdddd;
 }
-
+kbd {
+    font-size: smaller;
+    border: 0.2em solid;
+    border-color: #DDD #BBB #BBB #DDD;
+    padding: 0 0.4em;
+    background: #EEE;
+    white-space: nowrap;
+}
