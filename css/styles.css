@@ -19,3 +19,11 @@ h1 {
 .row-fluid {
     border: 1px solid red;
 }
+kbd {
+    font-size: smaller;
+    border: 0.2em solid;
+    border-color: #DDD #BBB #BBB #DDD;
+    padding: 0 0.4em;
+    background: #EEE;
+    white-space: nowrap;
+}
