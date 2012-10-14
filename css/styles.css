@@ -17,13 +17,14 @@ h1 {
     color: #dfdddd;
 }
 .row-fluid {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 kbd {
     font-size: smaller;
     border: 0.2em solid;
     border-color: #DDD #BBB #BBB #DDD;
     padding: 0 0.4em;
+    margin: 0 0.4em 0 0;
     background: #EEE;
     white-space: nowrap;
 }
