@@ -16,4 +16,6 @@ h1 {
     font-size: 3em;
     color: #dfdddd;
 }
-
+.row-fluid {
+    border: 1px solid red;
+}

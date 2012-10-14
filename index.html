@@ -36,6 +36,20 @@
             <img style="float: left" src="images/vimlogo.gif" />
             <h1 style="float: left">VIWIZ VI, VIM Spickzettel</h1>
             <br clear="both">
+            <h2>Dateien</h2>
+            <div>
+                <ul>
+                    <li>~/.NERDTreeBookmarks</li>
+                    <li>~/.gvimrc</li>
+                    <li>~/.gvimrc.after</li>
+                    <li>~/.vim/</li>
+                    <li>~/.vim-cache/</li>
+                    <li>~/.viminfo</li>
+                    <li>~/.vimrc</li>
+                    <li>~/.vimrc.after</li>
+                    <li>~/.vimrc.before</li>
+                </ul>
+            </div>
             <h2>Keyboard Layout</h2>
             <div>
                 <p>Der VI ist auf manchen Tastaturlayouts nicht so
@@ -96,7 +110,11 @@
             <h2>Browse</h2>
             <div class="row-fluid">
                 <div class="span3">
-                    <span class="key">strg</span><span class="key">]</span>
+                    <span class="key">strg</span><span
+                        class="key">]</span><br />
+                    Deutsch:<br />
+                    <span class="key">strg</span><span
+                        class="key">alt</span><span class="key">](6)</span>
                 </div>
                 <div class="span3">Springe zum Link oder suche nach dem Wort in der Hilfe</div>
             </div>
@@ -114,15 +132,15 @@
                 erhalten müssen die Befehle genauso eingegeben werden wie in
                 den Beispielen angegeben.</p>
             </div>
-            <div class="">
-                <div class="row-fluid">
-                    :help word CRTL-d<br />
+            <div class="row-fluid">
+                <div class="span3">
+                    :help word <span class="key">strg</span><span class="key">d</span><br />
                     :helpgrep word
                 </div>
-                <div class="span3">Zeigt alle Vorkommen von 'word' in der Hilfe</div>
+                <div class="span3">Zeigt die Namen aller Hilfedateien in denen 'word' vorkommt.</div>
             </div>
             <div class="row-fluid">
-                <div class="span3">:xxxx CRTL-d<br /></div>
+                <div class="span3">:xxxx <span class="key">strg</span><span class="key">d</span><br /></div>
                 <div class="span3">Zeigt alle möglichen Optionen zu dem Befehl :xxxx.</div>
             </div>
             <div class="row-fluid">
