@@ -27,6 +27,7 @@
             $(document).ready(function(){
                 $('h2').click(function(){
                     $(this).nextUntil('h2').toggle();
+                    $(this).toggleClass('close');
                 });
             });
         </script>
@@ -39,22 +40,26 @@
 
 
             <h2>Dateien</h2>
+			<div>
+				<p>Die hier aufgeführten Dateien und Verzeichnisse werden zur Konfiguration
+				oder zum Speichern von Metadaten verwendet.</p>
+			</div>
             <div>
                 <ul>
-                    <li>~/.NERDTreeBookmarks</li>
+                    <li>~/.vim/</li>
                     <li>~/.gvimrc</li>
                     <li>~/.gvimrc.after</li>
-                    <li>~/.vim/</li>
                     <li>~/.vim-cache/</li>
                     <li>~/.viminfo</li>
                     <li>~/.vimrc</li>
                     <li>~/.vimrc.after</li>
                     <li>~/.vimrc.before</li>
+                    <li>~/.NERDTreeBookmarks</li>
                 </ul>
             </div>
 
 
-            <h2>Keyboard Layout</h2>
+            <h2>Tastaturlayout</h2>
             <div>
                 <p>Mit einer deutschen Tastatur ist der VI(M) nicht so einfach zu bedienen und manchen Kommandos
                 sind schwieriger zu erreichen als mit einem englischen Tastaturlayout.</p>
