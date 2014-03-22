@@ -16,6 +16,19 @@ h1 {
     font-size: 3em;
     color: #dfdddd;
 }
+h2 {
+    background-color: lightgray;
+    border-bottom: 1x solid blue;
+    padding-left: 25px;
+}
+h2:before {
+    content: '▼';
+    width: 33px;
+    display: inline-block;
+}
+h2.closed:before {
+    content: '▶';
+}
 .row-fluid {
     /*border: 1px solid red;*/
 }
