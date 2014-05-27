@@ -32,6 +32,10 @@ h2.closed:before {
 .row-fluid {
     /*border: 1px solid red;*/
 }
+div.row-fluid:nth-child(2) {
+    background:#ff0000;
+}
+
 kbd {
     font-size: smaller;
     border: 0.2em solid;
