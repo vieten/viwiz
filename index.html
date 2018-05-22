@@ -38,7 +38,6 @@
             <h1 style="float: left">VIWIZ VI, VIM Spickzettel</h1>
             <br clear="both">
 
-
             <h2>Konfigurations-Dateien</h2>
 			<div>
 				<p>Die hier aufgeführten Dateien und Verzeichnisse werden zur Konfiguration
@@ -57,7 +56,6 @@
                     <li>~/.NERDTreeBookmarks</li>
                 </ul>
             </div>
-
 
             <h2>Tastaturlayout</h2>
             <div>
@@ -109,7 +107,6 @@
                 <img src="images/de_key_fn.png">
             </div>
 
-
             <h2>The nature</h2>
             <div class="row-fluid">
                 <p>
@@ -125,7 +122,6 @@
                 </div>
                 <div class="span3">Springe zum Link oder suche nach dem Wort in der Hilfe</div>
             </div>
-
 
             <h2>Browse</h2>
             <div class="row-fluid">
@@ -143,7 +139,6 @@
                 </div>
                 <div class="span3">Sprung zurück</div>
             </div>
-
 
             <h2>Hilfen</h2>
             <div class="abstract">
@@ -209,7 +204,6 @@
                 <div class="span3">Hilfe zu VIM-Option</div>
                 <div class="example">:help 'textwidth'</div>
             </div>
-
 
             <h2>Bewegen</h2>
             <div class="abstract">
@@ -330,7 +324,6 @@
                 <div class="span3"><kbd>shift</kbd> <kbd>L</kbd></div>
                 <div class="span3">Cursor springt in die unterste Bildschirmzeile</div>
             </div>
-
 
             <h2>Bearbeiten</h2>
             <div class="abstract">
@@ -470,7 +463,6 @@
                 <div class="span3">Steht der Cursor in einem Block mit geschweiften Klammern wird das innere vom Block gefaltet.</div>
             </div>
 
-
             <div class="row-fluid">
                 <div class="span3">zj</div>
                 <div class="span3">Gehe abwärts zum Anfang der nächsten Faltung.</div>
@@ -496,7 +488,6 @@
                 <div class="span3">open all folds</div>
             </div>
 
-
             <h2>Keyboard Macros</h2>
             <div class="abstract">
                 Start der Aufzeichnung mit 'q<i>Buchstabe</i>'.<br />
@@ -505,13 +496,16 @@
                 Der Buchstabe bezeichnet das Register a-z.
             </div>
 
-
-            <h2>Verschiedenes (Misc)</h2>
-            <div class="abstract">
-                Digraphs<br />
-                :digraphs zeigt alle Digraph-Sonderzeichen an.<br />
-                &lt;ctrl&gt;kCR - fügt einen Zeilenumbruch (^M) ein.<br />
-                Achtung: die Eingaben sind Case-Sensitiv.
+            <h2>Notizen</h2>
+            <div class="abstract">Notizen aus 'Learn VIM Script the hard way' von Steve Losh und anderen Quellen.</div>
+            <div class="helpbox">
+                <div class="usraction">:digraphs</div>
+                <div class="vimaction">zeigt alle Digraph-Sonderzeichen an.</div>
+            </div>
+            <div class="helpbox">
+                <div class="usraction">&lt;ctrl&gt;kCR</div>
+                <div class="vimaction">fügt einen Zeilenumbruch (^M) ein.<br />
+                Achtung: die Eingaben sind Case-Sensitiv.</div>
             </div>
             <div class="helpbox">
                 <div class="usraction">:cd %:h</div>
@@ -529,7 +523,22 @@
                 <div class="usraction">:scriptnames</div>
                 <div class="vimaction">Zeigt alle Plugins und geladenen _vimrcs</div>
             </div>
-
+            <div class="helpbox">
+                <div class="usraction">:echo</div>
+                <div class="vimaction">Gibt das was hinter :echo steht auf der Konsole aus.</div>
+            </div>
+            <div class="helpbox">
+                <div class="usraction">:echom</div>
+                <div class="vimaction">Gibt das was hinter :echo steht auf der Konsole aus und speichert die Anweisung.</div>
+            </div>
+            <div class="helpbox">
+                <div class="usraction">:echo $MYVIMRC</div>
+                <div class="vimaction">Zeigt den Ort der VIM-Konfigurationsdatei .vimrc</div>
+            </div>
+            <div class="helpbox">
+                <div class="usraction">:messages</div>
+                <div class="vimaction">Zeigt eine Liste von Nachrichten.</div>
+            </div>
 
             <h2>Kopieren & Einfügen (Copy & Paste)</h2>
             <div class="helpbox">
@@ -537,11 +546,16 @@
                 <div class="vimaction">Kopiert den gesamten Text in die Zwischenablage des Betriebssystems</div>
             </div>
 
+            <h2>Die schnellen VIM Hilfedateien</h2>
+            <div class="helpbox">
+                <div class="usraction">quickref.txt</div>
+                <div class="vimaction">VIM Befehlsübersicht aufzurufen mit :h quickref</div>
+            </div>
+
             <h2>Weitere Hilfen auf deutsch</h2>
             <p>
             <a href="http://www-user.tu-chemnitz.de/~hot/VIM/Tips_und_Tricks.html">http://www-user.tu-chemnitz.de/~hot/VIM/Tips_und_Tricks.html</a>
             </p>
-
 
             <h2>Weitere Hilfen International</h2>
             <p>
@@ -553,7 +567,6 @@
             <a href="http://vimtweets.com">http://vimtweets.com</a>
             Die Seite funktioniert zur Zeit ( 15. Mai 2012 ) leider nicht.
             </p>
-
 
         </div>
     </body>
