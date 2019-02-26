@@ -38,24 +38,32 @@
             <h1 style="float: left">VIWIZ VI, VIM Spickzettel</h1>
             <br clear="both">
 
-            <h2>Konfigurations-Dateien</h2>
+            <h2>Start & Konfiguration</h2>
 			<div>
-				<p>Die hier aufgeführten Dateien und Verzeichnisse werden zur Konfiguration
-				oder zum Speichern von Metadaten verwendet.</p>
+				<p>VIM Hilfe: :h init</p>
 			</div>
             <div>
 				<p>
-				Vim kann auch ohne Konfiguration gestartet werden:
-				<pre>$ vim -u NONE</pre>
+				<pre>$ vim -u NONE   # starten ohne Konfiguration</pre>
 				siehe auch :help init
 				</p>
+				<ul>
+					<li>:version  ##  zeige eincompilierte Eigenschaften</li>
+					<li>:set  ##  zeige set Variablen</li>
+					<li>:let  ##  zeige let Variablen</li>
+					<li></li>
+					<li></li>
+				</ul>
                 <ul>
-                    <li>~/.vim/</li>
+                    <li>~/.vimrc ## VIM-Konfigurationsdatei</li>
+                    <li>~/.vim/ ## Standardverzeichnis für Plugins usw.</li>
+                    <li>~/.viminfo  ## Inhalt Startbild</li>
+                    <li>~/.vimbackup/  ## Verzeichnis für Sicherungen</li>
+                    <li>~/.vimswap/  ## Ort für Swaps</li>
+
                     <li>~/.gvimrc</li>
                     <li>~/.gvimrc.after</li>
                     <li>~/.vim-cache/</li>
-                    <li>~/.viminfo</li>
-                    <li>~/.vimrc</li>
                     <li>~/.vimrc.after</li>
                     <li>~/.vimrc.before</li>
                     <li>~/.NERDTreeBookmarks</li>
@@ -64,68 +72,56 @@
 
             <h2>Tastaturlayout</h2>
             <div>
-                <p>Mit einer deutschen Tastatur ist der VI(M) nicht so einfach zu bedienen und manchen Kommandos
-                sind schwieriger zu erreichen als mit einem englischen Tastaturlayout.</p>
+                <p>Eine der wichtigsten Eigenschaften von VIM ist das dieser Editor ausschließlich mit der Tastatur bedient werden kann. Der
+				Einsatz der Maus ist zwar möglich aber in der Regel nicht nötig. Leider sind die 'Tasturbefehle' zur Steuerung stark auf ein
+				englisches Tastaturlayout abgestimmt. So wird der Klick auf einen Link/Tag mit <c-]> ausgelöst. Kein Problem mit einer englischen
+				Tastatur, mit einer deutschen allerdings ein kleiner Fingerbrecher.</p>
                 <p>Die Bilder zeigen den Unterschied zwischen englischem und deutschem Tastaturlayout.</p>
-                <p>Standard. Im deutschen sind die <a href="http://de.wikipedia.org/wiki/Tottaste">Tottasten</a> <kbd>^</kbd> und <kbd>´</kbd> aktiviert</p>
+				<p><h3>Standard</h3><br>
+				Im deutschen sind die <a href="http://de.wikipedia.org/wiki/Tottaste">Tottasten</a> <kbd>^</kbd> und <kbd>´</kbd> aktiviert</p>
                 <img src="images/en_key_neutral.png">
                 <img src="images/de_key_neutral.png">
                 <br />
 
-                <p>Mit gedückter Umschalt-Taste.</p>
+                <p><h3>Mit gedückter Umschalt-Taste.</h3></p>
                 <img src="images/en_key_shift.png">
                 <img src="images/de_key_shift.png">
                 <br />
 
-                <p>Mit gedrückter Steuerungs-Taste. Die Tottasten sind dekativiert!</p>
-                <img src="images/en_key_ctrl.png">
+                <p><h3>Mit gedrückter Steuerungs-Taste.</h3>
+                Die Tottasten sind deaktiviert!</p>
+				<img src="images/en_key_ctrl.png">
                 <img src="images/de_key_ctrl.png">
                 <br />
 
-                <p>Mit gedrückter Alt-Taste.</p>
+                <p><h3>Mit gedrückter Alt-Taste.</h3></p>
                 <img src="images/en_key_alt.png">
                 <img src="images/de_key_alt.png">
                 <br />
 
-                <p>Mit gleichzeitig gedrückter Umschalt- und Steuerungs-Taste</p>
+                <p><h3>Mit gleichzeitig gedrückter Umschalt- und Steuerungs-Taste</h3></p>
                 <img src="images/en_key_ctrl_shift.png">
                 <img src="images/de_key_ctrl_shift.png">
                 <br />
 
-                <p>Mit gleichzeitig gedrückter Umschalt- und Alt-Taste.</p>
+                <p><h3>Mit gleichzeitig gedrückter Umschalt- und Alt-Taste.</h3></p>
                 <img src="images/en_key_alt_shift.png">
                 <img src="images/de_key_alt_shift.png">
                 <br />
 
-                <p>Mit gleichzeitig gedrückter Alt- und Steuerungs-Taste</p>
+                <p><h3>Mit gleichzeitig gedrückter Alt- und Steuerungs-Taste</h3></p>
                 <img src="images/en_key_ctrl_alt.png">
                 <img src="images/de_key_ctrl_alt.png">
                 <br />
 
-                <p>Mit gleichzeitig gedrückter Umschalt-, Steuerungs- und Alt-Taste</p>
+                <p><h3>Mit gleichzeitig gedrückter Umschalt-, Steuerungs- und Alt-Taste</h3></p>
                 <img src="images/en_key_ctrl_alt_shift.png">
                 <img src="images/de_key_ctrl_alt_shift.png">
                 <br />
 
-                <p>Mit gedrückter Funktions-Taste.</p>
+                <p><h3>Mit gedrückter Funktions-Taste.</h3></p>
                 <img src="images/en_key_fn.png">
                 <img src="images/de_key_fn.png">
-            </div>
-
-            <h2>The nature</h2>
-            <div class="row-fluid">
-                <p>
-                Ups, eine englische Überschrift in einem deutschen Tutorial? 
-                Ja, die Natur von VIM ist einfach englisch. Viele Befehle lassen sich mit einer
-                englischen oder amerikanischen Tastaturbelegung einfacher Bedienen als mit einer
-                Deutschen.
-                Nichtsdestotrotz ist der VI ein hervorragender und
-                anpassungsfähiger Editor.
-                </p>
-                <div class="span3">
-                    <kbd>strg</kbd><kbd>]</kbd>
-                </div>
-                <div class="span3">Springe zum Link oder suche nach dem Wort in der Hilfe</div>
             </div>
 
             <h2>Browse</h2>
@@ -156,7 +152,10 @@
                     :help word <kbd>strg</kbd><kbd>d</kbd><br />
                     :helpgrep word
                 </div>
-                <div class="span3">Zeigt die Namen aller Hilfedateien in denen 'word' vorkommt.</div>
+                <div class="span3">
+					Zeigt die Namen aller Hilfedateien in denen 'word' vorkommt.
+					Mit :cnext und :cprev blättern. Mit :cwindow Liste anzeigen.
+				</div>
             </div>
             <div class="row-fluid">
                 <div class="span3">:xxxx <kbd>strg</kbd><kbd>d</kbd><br /></div>
