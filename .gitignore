@@ -2,3 +2,4 @@ Capfile
 config/deploy.rb
 config/deploy/*
 log/*
+archive/*
