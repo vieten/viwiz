@@ -3,8 +3,6 @@ Ein einfacher VIM Spickzettel.
 Responsive
 Einfach
 
-Kannste so machen ist aber kacke.
-
 TODO
 
 1) Den Style bitte besser semantisch aufbauen.
